@@ -1,3 +1,17 @@
-h1 {
-   color: red;
+@import 'libs/_font';
+
+body {
+   margin: 0 auto;
 }
+
+html {
+   scroll-behavior: smooth;
+   /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+.container {
+   padding: 84px 200px;
+   max-width: 1140px;
+   margin: 0 auto;
+}
+@import 'blocks/_header.scss';
