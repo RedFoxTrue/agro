@@ -1,4 +1,6 @@
-@import 'libs/_font';
+@import 'libs/font';
+@import 'base/buttons';
+// @import 'libs/slick';
 
 body {
    margin: 0 auto;
@@ -14,4 +16,5 @@ html {
    max-width: 1140px;
    margin: 0 auto;
 }
-@import 'blocks/_header.scss';
+@import 'blocks/header.scss';
+@import 'blocks/carousel.scss';
