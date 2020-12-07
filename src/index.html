@@ -33,7 +33,7 @@
             <a href="#" class="menu__link menu__link_phone">+380999456378</a>
           </li>
           <li class="menu__item">
-            <button class="button button_header"><a href="#" class="menu__link">Залишити заявку</a></button>
+            <button id="consultationBtn" class="button button_header">Залишити заявку</button>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">UA</a>
@@ -102,7 +102,10 @@
       </div>
     </section>
     <div class="overlay">
-      <div class="modal">
+
+      <!-- ОКНО "ПЕРЕЗВОНИТЕ МНЕ" -->
+
+      <div class="modal" id="consultation">
         <div class="modal__close">&times</div>
         <div class="modal__subtitle">Зворотній зв'язок</div>
         <div class="modal__descr">Поділіться думкою про нашу роботу або задайте нам будь-яке питання, що вас цікавить в поле коментар</div>
@@ -112,6 +115,27 @@
           <textarea name="comment" required placeholder="Коментар" type="text" /></textarea>
           <button class="button button__submit">Передзвоніть мені</button>
         </form>
+      </div>
+
+      <!-- ОКНО "УЗНАТЬ ЦЕНУ" -->
+
+      <div class="modal" id="order">
+        <div class="modal__close">&times</div>
+        <div class="modal__subtitle">Дiзнатися цiну</div>
+        <div class="modal__descr">Введiть свiй номер i ми Вам перетелефонуемо</div>
+        <form class="feed-form" action="#">
+          <input name="name" required placeholder="Ім’я" type="text" />
+          <input name="phone" required placeholder="Телефон" type="text" />
+          <button class="button button__submit">Передзвоніть мені</button>
+        </form>
+      </div>
+      
+      <!-- ОКНО "СПАСИБО"! -->
+
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times</div>
+        <div class="modal__subtitle">Дякуемо!</div>
+        <div class="modal__descr">Ми позвонимо Вам впродовж п`яти хвилин</div>
       </div>
     </div>
     <script src="js/main.min.js"></script>

@@ -215,3 +215,10 @@
     slideShow('.slider', {
       isAutoplay: true
     });
+
+
+    // MOДАЛЬНЫЕ ОКНА:
+
+
+
+// тест

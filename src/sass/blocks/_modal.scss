@@ -1,23 +1,30 @@
 .overlay {
+   display: none;
    position: fixed;
    width: 100%;
    height: 100%;
    top: 0;
    background-color: rgba(0, 0, 0, .56);
+   pointer-events: none;
+   transition: opacity0 .3s ease-in;
 }
 .modal {
    position: absolute;
+   display: none;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: #eceeee;
    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
    padding: 45px 75px 32px 75px;
+   animation-name: animate;
+   animation-duration: 0.5s;
    &__close {
       position: absolute;
       top: 3px;
       right: 10px;
       font-size: 30px;
+      cursor: pointer;
    }
 
    &__subtitle {
@@ -35,11 +42,11 @@
       font-weight: 400;
       margin-top: 21px;
    }
+   &_mini {
+      padding: 30px 40px;
+   }
 }
 .feed-form {
-   :nth-child(3){
-      display: flex;
-   }
    input {
       padding-left: 5px;
       display: block;
@@ -69,3 +76,11 @@
       font-weight: 500;
    }
 }
+
+
+#order, #thanks {
+   display: none;
+}
+
+
+// тест
