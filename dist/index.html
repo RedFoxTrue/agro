@@ -33,7 +33,7 @@
             <a href="#" class="menu__link menu__link_phone">+380999456378</a>
           </li>
           <li class="menu__item">
-            <button id="consultationBtn" class="button button_header">Залишити заявку</button>
+            <button data-modal="consultation" class="button button_header">Залишити заявку</button>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">UA</a>
@@ -113,7 +113,7 @@
           <input name="name" required placeholder="Ім’я" type="text" />
           <input name="phone" required placeholder="Телефон" type="text" />
           <textarea name="comment" required placeholder="Коментар" type="text" /></textarea>
-          <button class="button button__submit">Передзвоніть мені</button>
+          <button data-modal="thanks" class="button button__submit">Передзвоніть мені</button>
         </form>
       </div>
 
@@ -126,7 +126,7 @@
         <form class="feed-form" action="#">
           <input name="name" required placeholder="Ім’я" type="text" />
           <input name="phone" required placeholder="Телефон" type="text" />
-          <button class="button button__submit">Передзвоніть мені</button>
+          <button data-modal="thanks" class="button button__submit">Передзвоніть мені</button>
         </form>
       </div>
       
@@ -138,6 +138,7 @@
         <div class="modal__descr">Ми позвонимо Вам впродовж п`яти хвилин</div>
       </div>
     </div>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
     <script src="js/main.min.js"></script>
   </body>
 </html>

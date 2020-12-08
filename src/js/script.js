@@ -219,6 +219,16 @@
 
     // MOДАЛЬНЫЕ ОКНА:
 
-
-
+$('[data-modal=consultation]').on('click', function () {
+   $('.overlay, #consultation').fadeIn();
+});
+$('.modal__close').on('click', function () {
+      $('.overlay, #consultation, #thanks, #order').fadeOut()
+});
+$('[data-modal=thanks]').on('click', function () {
+   $('#thanks').fadeIn();
+});
+$(".overlay").on('click', function (e) {
+    if (e.target == this) $(".modal, .overlay").fadeOut('fast');
+})
 // тест
