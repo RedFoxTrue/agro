@@ -12,10 +12,11 @@ html {
 }
 
 .container {
-   padding: 84px 200px;
+   padding: 31px 200px;
    max-width: 1140px;
    margin: 0 auto;
 }
 @import 'blocks/header.scss';
 @import 'blocks/carousel.scss';
 @import 'blocks/modal';
+@import 'blocks/catalog'
