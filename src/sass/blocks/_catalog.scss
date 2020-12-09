@@ -1,5 +1,5 @@
 .catalog {
-   background: url('../img/bg_2.jpg') center (center/cover) no-repeat;
+   
    &__content {
       margin-top: 41px;
       display: flex;
@@ -9,7 +9,7 @@
    &-item {
       display: block;
       position: relative;
-      width: 240px;
+      width: 225px;
       min-height: 200px;
       box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.25);
       border-radius: 20px;
@@ -31,6 +31,9 @@
          bottom: 0px;
          left: 0px;
          right: 0px;
+         &:hover {
+            background-color: #f5f5f5;
+         }
          p {
             color: #000000;
             font-family: "Roboto";
@@ -50,18 +53,4 @@
          margin: 0 auto;
       }
    }
-}
-.title {
-   color: #50525e;
-   font-family: Montserrat;
-   font-size: 24px;
-   font-weight: 500;
-   font-style: normal;
-   letter-spacing: normal;
-   line-height: normal;
-   text-align: center;
-   margin: 0;
-}
-hr {
-   width: 156px;
 }

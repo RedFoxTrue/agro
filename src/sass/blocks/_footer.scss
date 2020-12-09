@@ -1,0 +1,84 @@
+.footer {
+   padding: 31px 270px 20px 270px;
+   margin: 0 auto;
+   background-color: #262c25;
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   ul {
+      padding: 0;
+      list-style-type: none;
+      margin: 0;
+   }
+   &__link {
+      color: #c7c0c0;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 140px;
+      width: 33.33%;
+   }
+   &__social {
+      color: #c7c0c0;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 140px;
+      width: 33.33%;
+   }
+   &__main {
+      width: 33.33%;
+   }
+
+   &__logo {
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+   }
+   &__img {
+      display: block;
+      margin: auto;
+   }
+   &__subtitle {
+      color: #aeb3b7;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+      margin-top: 14px;
+   }
+   a {
+      text-decoration: none;
+      color: #c7c0c0;
+      
+   }
+   .kaktus {
+      margin-top: 10px;
+      color: #aeb3b7;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 2.4px;
+      line-height: 12.86px;
+      text-align: center;
+   }
+}

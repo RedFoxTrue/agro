@@ -12,11 +12,33 @@ html {
 }
 
 .container {
-   padding: 31px 200px;
+   padding: 31px 240px;
    max-width: 1140px;
    margin: 0 auto;
+}
+.background {
+   background: url('../img/bg_2.jpg') center (center/cover) no-repeat;
+}
+
+.title {
+   color: #50525e;
+   font-family: Montserrat;
+   font-size: 24px;
+   font-weight: 500;
+   font-style: normal;
+   letter-spacing: normal;
+   line-height: normal;
+   text-align: center;
+   margin: 0;
+}
+
+hr {
+   width: 156px;
 }
 @import 'blocks/header.scss';
 @import 'blocks/carousel.scss';
 @import 'blocks/modal';
-@import 'blocks/catalog'
+@import 'blocks/catalog';
+@import 'blocks/popular';
+@import 'blocks/news';
+@import 'blocks/footer';
