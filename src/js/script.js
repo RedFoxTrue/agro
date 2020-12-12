@@ -229,6 +229,11 @@ $('[data-modal=thanks]').on('click', function () {
    $('#thanks').fadeIn();
 });
 $(".overlay").on('click', function (e) {
-    if (e.target == this) $(".modal, .overlay").fadeOut('fast');
+   if (e.target == this) $(".modal, .overlay").fadeOut('fast');
 })
-// тест
+$('[data-modal=price]').on('click', function () {
+   $('.overlay, #order').fadeIn();
+});
+
+
+//    СЛАЙДЕР PRODUCT 
