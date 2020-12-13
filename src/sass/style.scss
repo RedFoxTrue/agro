@@ -1,5 +1,6 @@
 @import 'libs/font';
 @import 'base/buttons';
+@import 'libs/slick';
 // @import 'libs/slick';
 
 body {
@@ -30,6 +31,10 @@ html {
    line-height: normal;
    text-align: center;
    margin: 0;
+   &__page {
+      
+      border-bottom: 1px solid #50525e;
+   }
 }
 
 hr {
@@ -43,3 +48,4 @@ hr {
 @import 'blocks/news';
 @import 'blocks/footer';
 @import 'blocks/product';
+@import 'blocks/page';

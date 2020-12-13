@@ -7,7 +7,7 @@
       min-height: 453px;
       background-color: #ffffff;
       margin-top: 33px;
-      padding: 15px 130px 15px 75px;
+      padding: 15px 80px 15px 75px;
       margin-bottom: 44px;
    }
    &__img {
@@ -33,7 +33,7 @@
    }
    &__descr {
       width: 425px;
-      height: 125px;
+      min-height: 125px;
       margin-top: 15px;
       border: 1px solid #99a1a8;
       background-color: #ffffff;
@@ -46,6 +46,37 @@
       letter-spacing: normal;
       line-height: normal;
       text-align: left;
+   }
+   &__slider {
+      margin: 0 auto;
+      margin-top: 31px;
+      height: 340px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .popular-item {
+         margin: 0 auto;
+         margin-top: 5px;
+         margin-bottom: 5px;
+         box-shadow: 1px -1px 7px rgba(0, 0, 0, 0.20);
+      }
+   }
+   .slick-prev {
+      width: 53px;
+      height: 100%;
+      background-color: #99a1a8;
+      border: none;
+   }
+   .slick-next {
+      width: 53px;
+      height: 100%;
+      background-color: #99a1a8;
+      border: none;
+   }
+   .slick-list {
+      width: 850px;
+      margin: 0 auto;
    }
 }
 
