@@ -5,6 +5,10 @@
    &-item {
    display: flex;
    margin-bottom: 31px;
+   background-color: #ffffff;
+   border-top-right-radius: 13px;
+   border-bottom-right-radius: 13px;
+   border-bottom-left-radius: 13px;
       &__img {
          width: 291px;
          height: 153px;

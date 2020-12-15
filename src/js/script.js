@@ -217,8 +217,9 @@
     });
 
 
-    // MOДАЛЬНЫЕ ОКНА:
+    
 
+// MOДАЛЬНЫЕ ОКНА:
 $('[data-modal=consultation]').on('click', function () {
    $('.overlay, #consultation').fadeIn();
 });
@@ -234,7 +235,7 @@ $(".overlay").on('click', function (e) {
 $('[data-modal=price]').on('click', function () {
    $('.overlay, #order').fadeIn();
 });
-
+//    СЛАЙДЕР PRODUCT 
 $(document).ready(function(){
    $('.product__slider').slick({
    infinite: true,
@@ -244,6 +245,42 @@ $(document).ready(function(){
       nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_product.png" alt="next"></button>'
    });
 });
+//    ПЛАВНАЯ ПРОКРУТКА И КНОПКА ВВЕРХ
+
+$(window).scroll(function () {
+   if ($(this).scrollTop() > 1000) {
+      $('.pageup').fadeIn();
+   } else {
+      $('.pageup').fadeOut();
+   }
+});
 
 
-//    СЛАЙДЕР PRODUCT 
+//    ВАЛИДАЦИЯ ФОРМ
+
+function validateForms(form) {
+   $(form).validate({
+   rules: {
+      name: "required",
+      phone: {
+         required: true,
+         minlength: 10
+      },
+      comment: {
+         required: false
+      }
+   },
+     messages: {
+    name: "Пожалуйста, введите своё имя",
+    phone: {
+      required: "Пожалуйста, введите свой номер телефона",
+       phone: "Неправильно введён номер телефона",
+      minlength: jQuery.validator.format("Введите не меньше  {0} цифр")
+    }
+      }
+});
+};
+validateForms('.feed-form');
+validateForms('#order form');
+
+
