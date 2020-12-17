@@ -48,9 +48,9 @@
 .company {
    background-color: #b5dcc2;
    &__block{
-      padding: 8px;
-      width: 1020px;
-      min-height: 770px;
+      margin: 0 auto;
+      padding: 8px 8px 30px 8px;
+      max-width: 1020px;
       border-radius: 16px;
       background-color: #ffffff;
       margin-bottom: 35px;
@@ -58,7 +58,7 @@
    }
    &__text{
       margin: 0 auto;
-      width: 886px;
+      max-width: 886px;
       color: #000000;
       font-family: Roboto;
       font-size: 18px;
@@ -69,14 +69,21 @@
       text-align: left;
    }
    &__img {
-      width: 975px;
+      max-width: 975px;
       margin: 0 auto;
       margin-top: 32px;
+      display: flex;
+      justify-content: space-around;
+      img {
+         width: 49.5%;
+         display: flex;
+      }
    }
    &__partners {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-top: 41px;
    }
    &__partner {
       width: 150px;
@@ -84,7 +91,6 @@
       max-height: 160px;
       background-color: #ffffff;
       padding: 20px;
-      margin-top: 41px;
       img {
          display: block;
          width: 100%;
@@ -160,11 +166,10 @@
    }
 }
 .contacts {
-   
    &__item {
       margin: 0 auto;
       margin-bottom: 35px;
-      width: 750px;
+      max-width: 750px;
       height: 147px;
       color: #000000;
       font-family: Montserrat;
@@ -193,8 +198,9 @@
 }
 .adress {
    background-color: #b5dcc2;
-   padding: 15px 240px 31px 240px;
-   margin: 0 auto;
+   .container {
+      padding-top: 20px;
+   }
    &__wrapper {
       display: flex;
       align-items: center;
@@ -226,9 +232,12 @@
 }
 .leaf {
    background-color: #dcf2e8;
+   &__wrapper {
+      max-width: 1020px;
+      margin: 0 auto;
+   }
    &__slider {
-      width: 802px;
-      height: 421px;
+      max-width: 802px;
       margin: 0 auto;
       position: relative;
       z-index: 99999;
@@ -255,7 +264,7 @@
       }
    }
    &__social {
-      margin-top: 8px;
+      margin-top: 15px;
       img {
          width: 24px;
          height: 24px;
@@ -268,16 +277,14 @@
    &__block {
       position: relative;
       padding: 8px;
-      width: 1020px;
-      min-height: 770px;
       border-radius: 16px;
       background-color: #ffffff;
-      margin-top: 8px;
+      margin-top: 5px;
       padding-bottom: 32px;
    }
    &__text {
       margin: 0 auto;
-      width: 886px;
+      max-width: 886px;
       color: #000000;
       font-family: Roboto;
       font-size: 18px;

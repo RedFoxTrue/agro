@@ -256,9 +256,36 @@ $(document).ready(function(){
    slidesToShow: 3,
    slidesToScroll: 3,
       prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/prev_product.png" alt="prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_product.png" alt="next"></button>'
+      nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_product.png" alt="next"></button>',
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            infinite: true,
+            }
+         },
+         {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+         }
+         // You can unslick at a given breakpoint now by adding:
+         // settings: "unslick"
+         // instead of a settings object
+      ]
    });
-
+//    СЛАЙДЕР НОВОСТЕЙ
    $('.leaf__slider').slick({
    dots: false,
    infinite: true,
@@ -270,7 +297,7 @@ $(document).ready(function(){
    });
 });
 
-//    СЛАЙДЕР НОВОСТЕЙ
+
 
 
 
@@ -319,10 +346,10 @@ function validateForms(form) {
       }
    },
      messages: {
-    name: "Пожалуйста, введите своё имя",
+    name: "Будь-ласка, введiть своє iм’я",
     phone: {
-      required: "Пожалуйста, введите свой номер телефона",
-       phone: "Неправильно введён номер телефона",
+      required: "Будь-ласка, введiть свiй номер телефона",
+       phone: "Неправильно введенний номер телефона",
       minlength: jQuery.validator.format("Введите не меньше  {0} цифр")
     }
       }

@@ -126,7 +126,8 @@
 
 .slider__item {
    &_text {
-      width: 773px;
+      max-width: 773px;
+      padding: 0 40px;
       height: 137px;
       background-color: rgba(255, 255, 255, 0.48);
       font-family: 'Montserrat';
