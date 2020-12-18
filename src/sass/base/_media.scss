@@ -178,6 +178,38 @@
    }
 }
 @media (max-width: 767px){
+   .container {
+      padding: 15px 35px;
+   }
+   .popular__wrapper {
+      padding: 20px 10px;
+   }
+   header {
+      height: 60px;
+   }
+   .slider__item {
+      height: 300px;
+      &_text {
+         font-size: 17px;
+         height: 120px;
+      }
+   }
+   .button__slider {
+      width: 150px;
+      font-size: 14px;
+      margin-right: 30px;
+   }
+   .slider__item_social .icons__social {
+      margin-right: 20px;
+   }
+   .slider__indicators li {
+      width: 7px;
+      height: 7px;
+   }
+   .slider__indicators li.active {
+      width: 15px;
+      height: 15px;
+   }
    .menu{
       position: fixed;
       top: 0;
@@ -254,4 +286,121 @@
          }
       }
    }
+   .catalog__content {
+      margin-top: 26px;
+   }
+   .news-item {
+      margin-bottom: 20px;
+      &__img {
+         width: 150px;
+         height: 100%;
+      }
+      &__descr {
+         margin-top: 6px;
+         font-size: 12px;
+      }
+      &__subtitle {
+         font-size: 14px;
+      }
+   }
+   .news__wrapper {
+      margin-top: 20px;
+   }
+   .news__more {
+      margin-top: 30px;
+      margin-bottom: 4px;
+   }
+   .catalog-item{
+      width: 200px;
+   }
+   .footer {
+      padding: 20px 50px 10px 50px;
+      &__link {
+         min-height: 100px;
+         font-size: 12px;
+      }
+      &__social {
+         font-size: 12px;
+      }
+   }
+   .links {
+      font-size: 12px;
+      &__target {
+         font-size: 16px;
+      }
+   }
+   .product {
+      &__wrapper {
+         margin-top: 20px;
+      }
+   }
+   .company {
+      &__block{
+         margin-top: 20px;
+      }
+      &__img{
+         margin-top: 16px;
+      }
+      &__partner {
+         width: 80px;
+         min-height: 75px;
+      }
+   }
+   .products {
+      &__search {
+         width: 440px;
+         input {
+            width: 310px;
+            height: 34px;
+         }
+         button {
+            width: 102px;
+            height: 37px;
+            font-size: 14px;
+         }
+      }
+   }
+   .tech__item {
+      font-size: 13px;
+      margin-bottom: 25px;
+   }
+   .adress {
+      &__wrapper {
+         display: block;
+      }
+      &__item {
+         margin: 0 auto;
+      }
+      &__img {
+         margin-top: 25px;
+      }
+   }
+   .leaf {
+      &__text {
+         font-size: 12px;
+      }
+      &__info {
+         a {
+            font-size: 12px;
+         }
+         img {
+            width: 12px;
+            height: 14px;
+         }
+      }
+      &__block {
+         padding-top: 1px;
+      }
+   }
+   .pageup {
+      bottom: 20px;
+      right: 34px;
+      width: 20px;
+      height: 20px;
+      &:hover {
+         width: 20px;
+         height: 20px;
+      }
+   }
 }
+@media (max-width: 575px) {}

@@ -149,7 +149,7 @@
    }
    &__item{
       background-color: #ffffff;
-      width: 510px;
+      width: 49%;
       height: 62px;
       margin-bottom: 35px;
       color: #474b4a;
@@ -205,6 +205,10 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+   }
+   &__img{
+      width: 530px;
+      height: 100%;
    }
    &__item {
       width: 180px;
