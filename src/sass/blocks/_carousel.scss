@@ -151,9 +151,14 @@
          color: #4f525e;
       }
       .icons__social {
-         margin-right: 33px;
-         width: 33px;
-         height: 33px;
+         display: flex;
+         margin-right: 25px;
+         width: 40px;
+         height: 40px;
+         img {
+            width: 40px;
+            height: 40px;
+         }
       }
    }
 }

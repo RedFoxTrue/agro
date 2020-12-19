@@ -219,7 +219,7 @@
       height: 100vh;
       padding: 20px 15px;
       z-index: 999999;
-      background-color: rgba(0, 0, 0, 0.45);
+      background-color: rgba(0, 0, 0, 0.65);
       transition: 0.4s all;
       :last-child {
          margin: 0 auto;
@@ -337,6 +337,7 @@
    .company {
       &__block{
          margin-top: 20px;
+         padding: 10px 15px;
       }
       &__img{
          margin-top: 16px;
@@ -344,6 +345,9 @@
       &__partner {
          width: 80px;
          min-height: 75px;
+      }
+      &__text{
+         font-size: 13px;
       }
    }
    .products {
@@ -376,8 +380,15 @@
       }
    }
    .leaf {
+      &__slider {
+         margin-top: 20px;
+         .slick-prev, .slick-next {
+            width: 25px;
+            padding: 0 2px;
+         } 
+      }
       &__text {
-         font-size: 12px;
+         font-size: 13px;
       }
       &__info {
          a {
@@ -389,7 +400,10 @@
          }
       }
       &__block {
-         padding-top: 1px;
+         padding: 15px 15px;
+      }
+      .slick-slide {
+         height: 300px;
       }
    }
    .pageup {
@@ -403,4 +417,94 @@
       }
    }
 }
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+   .container {
+      padding: 15px 20px;
+   }
+   .pageup {
+      display: none
+   }
+   .menu {
+      width: 60%;
+   }
+   .slider__item {
+         height: 250px;
+      &_text {
+         font-size: 12px;
+         padding: 0 7px;
+      }
+      &_social {
+         margin-top: 18px;
+      }
+      .button__slider {
+         width: 130px;
+         font-size: 13px;
+         margin-right: 30px;
+         height: 40px;
+      }
+   }
+   .title {
+      font-size: 18px;
+   }
+   hr {
+      width: 130px;
+   }
+   .catalog {
+      &__content {
+         margin-top: 20px;
+         justify-content: space-between;
+      }
+      &-item {
+         width: 120px;
+         min-height: 160px;
+         padding: 0 5px;
+         margin-bottom: 20px;
+         &__img {
+            height: 98px;
+         }
+         &__footer {
+            height: 0;
+            min-height: 42px;
+            padding: 10px 5px;
+            p {
+               margin: 0;
+               font-size: 12px;
+            }
+         }
+      }
+   }
+   .popular {
+      &__wrapper {
+         padding: 23px 10px;
+      }
+      &__content {
+         display: flex;
+         margin-top: 20px;
+         justify-content: center;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+      &-item{
+         width: 200px;
+         margin: 0 auto;
+         margin-bottom: 10px;
+         padding-bottom: 15px;
+
+         &__img {
+            height: 140px;
+            img {
+               height: 140px;
+            }
+         }
+         &__subtitle {
+            font-size: 16px;
+            margin-top: 7px;
+         }
+         &__descr {
+            margin-top: 5px;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+         }
+      }
+   }
+}
