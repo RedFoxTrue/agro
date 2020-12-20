@@ -235,6 +235,9 @@ $(".overlay").on('click', function (e) {
 $('[data-modal=price]').on('click', function () {
    $('.overlay, #order').fadeIn();
 });
+
+
+
 //    СЛАЙДЕР PRODUCT 
 $(document).ready(function(){
    $('.product__slider').slick({
@@ -343,5 +346,6 @@ function validateForms(form) {
 };
 validateForms('.feed-form');
 validateForms('#order form');
+
 
 

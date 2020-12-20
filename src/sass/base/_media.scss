@@ -418,6 +418,12 @@
    }
 }
 @media (max-width: 575px) {
+   .slider__indicators {
+      display: none;
+   }
+   .slider__control {
+      display: none;
+   }
    .container {
       padding: 15px 20px;
    }
@@ -429,12 +435,21 @@
    }
    .slider__item {
          height: 250px;
+         
       &_text {
          font-size: 12px;
          padding: 0 7px;
       }
       &_social {
          margin-top: 18px;
+         .icons__social {
+            width: 30px;
+            height: 30px;
+               img {
+               width: 30px;
+               height: 30px;
+            }
+         }
       }
       .button__slider {
          width: 130px;
@@ -505,6 +520,90 @@
             font-size: 12px;
             letter-spacing: 0.3px;
          }
+      }
+   }
+   .news__more {
+      width: 110px;
+      height: 40px;
+      .button__news {
+         width: 110px;
+         height: 40px;
+         font-size: 13px;
+      }
+   }
+   .news-item {
+      flex-direction: column;
+         &__img {
+         width: 229px;
+         height: 100%;
+         margin: 0 auto;
+         margin-top: 0px;
+         margin-top: 5px;
+         &__subtitle {
+            font-size: 13px;
+         }
+         &__descr {
+            font-size: 11px;
+         }
+      }
+   }
+   .footer {
+      .kaktus {
+         font-size: 9px;
+         margin-top: 8px;
+      }
+      &__wrapper {
+         align-items: center;
+      }
+      &__logo {
+         margin-top: 15px;
+      }
+      &__social {
+         min-height: 120px;
+         font-size: 10px;
+      }
+      &__link {
+         font-size: 10px;
+         // width: 50%;
+      }
+      // &__main {
+      //    display: none;
+      // }
+      &__img {
+         width: 75px;
+      }
+      &__subtitle {
+         margin-top: 8px;
+         font-size: 11px;
+      }
+      ul {
+         height: 120px;
+      }
+      padding: 15px 10px 10px 10px;
+   }
+   .product {
+      &__wrapper {
+         flex-direction: column;
+         margin-bottom: 15px;
+      }
+      &__img {
+         max-width: 100%;
+         height: 100%;
+      }
+      &__info {
+         margin-left: 0;
+      }
+      &__descr {
+         font-size: 13px;
+         padding: 10px;
+      }
+      &__subtitle {
+         font-size: 22px;
+         height: 58px;
+      } 
+      &__slider {
+         margin-top: 20px;
+         height: 250px;
       }
    }
 }
