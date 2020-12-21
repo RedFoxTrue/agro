@@ -253,6 +253,9 @@
 
       }
    }
+   .popular-item__img img {
+      height: 175px;
+   }
    .hamburger {
       display: block;
       position: absolute;
@@ -417,6 +420,33 @@
       }
    }
 }
+.modal {
+   padding: 25px 35px 30px 35px;
+   &__subtitle {
+      font-size: 20px;
+   }
+   &__descr {
+      font-size: 12px;
+      margin-top: 10px;
+   }
+   .feed-form {
+      input {
+         width: 400px;
+         height: 24px;
+         margin-top: 18px;
+      }
+      textarea {
+         width: 400px;
+      }
+   }
+   .button__submit {
+      width: 144px;
+      height: 41px;
+      font-size: 13px;
+      margin-top: 22px;
+   }
+   
+}
 @media (max-width: 575px) {
    .slider__indicators {
       display: none;
@@ -467,7 +497,7 @@
    .catalog {
       &__content {
          margin-top: 20px;
-         justify-content: space-between;
+         justify-content: space-around;
       }
       &-item {
          width: 120px;
@@ -605,5 +635,110 @@
          margin-top: 20px;
          height: 250px;
       }
+   }
+   .company {
+      &__partner {
+         width: 27%;
+         min-height: 24px;
+         margin-bottom: 20px;
+      }
+      &__partners {
+         justify-content: space-around;
+         flex-wrap: wrap;
+      }
+   }
+   .products {
+      &__search {
+         width: 255px;
+            input {
+            width: 160px;
+            height: 25px;
+            font-size: 13px;
+         }
+         button {
+            width: 76px;
+            height: 31px;
+            font-size: 13px;
+         }
+      } 
+   }
+   .tech {
+      &__item {
+         font-size: 12px;
+         margin-bottom: 17px;
+         padding: 10px 5px; 
+         width: 44%;
+         line-height: 15px;
+      }
+   }
+   .contacts {
+      &__item {
+         &_subtitle {
+            line-height: 30px;
+            margin-top: 20px;
+         }
+         &_link {
+            margin-top: 6px;
+            display: block;
+         }
+      }
+   } 
+   .adress {
+      &__item {
+         padding-bottom: 10px;
+         h4 {
+            font-size: 15px;
+            line-height: 0px;
+         }
+      }
+      &__img {
+         width: 100%;
+         height: 200px;
+      }
+   }
+   .leaf {
+      &__social {
+         margin-top: 10px;
+         img {
+            width: 20px;
+            height: 20px;
+         }
+      }
+      &__info {
+         width: 110px;
+         height: 25px;
+         top: -14px;
+         padding: 0 5px 0 10px;
+         a {
+            font-size: 11px;
+         }
+      }
+      &__text {
+         font-size: 11px;
+      }
+      &__slider {
+         margin-top: 20px;
+         max-height: 200px;
+         img {
+            max-height: 200px;
+         }
+         .slick-slide {
+            max-height: 200px;
+         }
+      }
+      .links {
+         font-size: 10px;
+         &__target {
+            font-size: 12px;
+         }
+      }
+   }
+   .modal .feed-form input {
+      width: 224px;
+      height: 24px;
+      margin-top: 18px;
+   } A
+   .modal .feed-form textarea {
+      width: 225px;
    }
 }
