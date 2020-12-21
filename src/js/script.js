@@ -244,8 +244,8 @@ $(document).ready(function(){
    infinite: true,
    slidesToShow: 3,
    slidesToScroll: 3,
-      prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/prev_product.png" alt="prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_product.png" alt="next"></button>',
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/prev_product.png" alt="prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/icons/next_product.png" alt="next"></button>',
       responsive: [
          {
             breakpoint: 1024,
@@ -281,8 +281,8 @@ $(document).ready(function(){
    speed: 500,
    fade: true,
    cssEase: 'linear',
-   prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/prev_product.png" alt="prev"></button>',
-   nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_product.png" alt="next"></button>'
+   prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/prev_product.png" alt="prev"></button>',
+   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/next_product.png" alt="next"></button>'
    });
 });
 
