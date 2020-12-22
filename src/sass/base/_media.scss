@@ -5,6 +5,7 @@
    .container {
       padding: 20px 150px;
    }
+   
 }
 @media (max-width: 1200px){
    .container {
@@ -25,6 +26,14 @@
    .menu {
       &__item {
          margin-right: 13px;
+      }
+   }
+   .popular {
+      &__item {
+         max-height: 300px;
+      }
+      &__wrapper {
+         padding: 30px 20px;
       }
    }
 }
@@ -67,6 +76,9 @@
          &__img{
             height: 160px;
             max-width: 100%;
+            img {
+               height: 100%;
+            }
          }
       }
       .popular-item:last-child {
@@ -255,7 +267,7 @@
       }
    }
    .popular-item__img img {
-      height: 175px;
+      height: 100%;
    }
    .hamburger {
       display: block;
@@ -566,11 +578,11 @@
    .news-item {
       flex-direction: column;
          &__img {
-         width: 229px;
-         height: 100%;
+         min-width: 250px;
+         min-height: 153px;
          margin: 0 auto;
          margin-top: 0px;
-         margin-top: 5px;
+         margin-top: 15px;
          &__subtitle {
             font-size: 13px;
          }
